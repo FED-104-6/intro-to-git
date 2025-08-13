@@ -49,4 +49,13 @@ git branch new-feature-001
 git checkout new-feature-001
 ```
 
-Note: An interesting command is `git checkout -` which will checkout the previous branch you were on.
+Note: An interesting command is `git checkout -` which will checkout the previous branch you were on.  
+  
+Now that we have created a new branch, and done some work on it (we added some text, made some commits, etc.), if we want to add those changes to the main branch, we can do something called a "merge".  
+  
+Here's how:
+
+```bash
+git checkout main
+git merge new-feature-001
+```
