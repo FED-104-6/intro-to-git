@@ -79,5 +79,44 @@ You can see what remote repositories you have connected with the `git remote` co
 git remote -v
 ```
 
+Now that we have a remote attached and named, and some code or files commited, we can push our code to the remote repository.  
+  
+```bash
+git push origin main
+```
+
+The oposite of push is pull. We can pull code from the remote repository to our local repository.  
+  
+```bash
+git pull origin main
+```
+
+Note, that this uses the `remote branch` syntax, so `git push origin main` and `git pull origin main` will push to or pull from the `main` branch on the `origin` remote.  
+  
+Likewise, if we were working on a feature branch, we could push to and pull from that branch as well.  
+
+```bash
+git push origin new-feature-001
+git pull origin new-feature-001
+```
+
+## Pull Requests
+
+Now, we're going to create a new branch, and push that to Github. The new branch will have these changes on it, and we want to merge these changes into the main branch.  
+  
+After we do that, we will want to pull those changes from Github to our local main branch.  
+  
+## Exercise 001
+  
+Send me a message with your GitHub username or email so that I can add you to the organization and you can create a repository for this exercise.  
+  
+1. Create a new repository on GitHub.  
+2. Clone the repository to your local machine.  
+3. Create a new branch called `new-feature-001`.  
+4. Add a file called `README.md` to the repository.  
+5. Commit your changes.  
+6. Push your changes to the remote repository.  
+7. Create a pull request to merge your changes into the `main` branch.
+
 
 
