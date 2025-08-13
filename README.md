@@ -1,4 +1,6 @@
-# Introduction to Git
+# Introduction to Git. 
+  
+  * [Git Documentation](https://git-scm.com/book/en/v2)
 
 Git is a distributed version control system, which we use to keep track of our software. This helps us when we are working with others, and especially with sharing code and code changes.  
   
@@ -17,6 +19,11 @@ The `git init` command creates a hidden directory (directory is just another wor
 Some other commands that we are going to get used to pretty quickly are:
 
 ```bash
+git status
+git log
+```
+
+```bash
 git add <file>...
 git add -A
 ```
@@ -27,4 +34,15 @@ Once a file is "staged" you can use the `git commit` command to save the changes
 
 ```bash
 git commit -m "Your message here"
+```
+
+Another very interesting _feature_ of Git is _branches_. Branches are a way to work on different versions of your code at the same time. You can think of them as different "copies" of your code.
+
+```bash
+git branch <branch-name>
+git checkout <branch-name>
+
+# example
+git branch new-feature-001
+git checkout new-feature-001
 ```
