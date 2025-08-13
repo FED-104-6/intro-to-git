@@ -38,6 +38,8 @@ git commit -m "Your message here"
 
 Another very interesting _feature_ of Git is _branches_. Branches are a way to work on different versions of your code at the same time. You can think of them as different "copies" of your code.
 
+## Branches
+
 ```bash
 git branch <branch-name>
 git checkout <branch-name>
@@ -46,3 +48,5 @@ git checkout <branch-name>
 git branch new-feature-001
 git checkout new-feature-001
 ```
+
+Note: An interesting command is `git checkout -` which will checkout the previous branch you were on.
