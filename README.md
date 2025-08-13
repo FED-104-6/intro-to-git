@@ -59,3 +59,25 @@ Here's how:
 git checkout main
 git merge new-feature-001
 ```
+
+## Github 
+  
+Github is an online service that happens to have the name git, but isn't actually related to it.  
+  
+We can store our code on Github, by pushing to it, and pulling from it. Let's start by making a repository on Github.  
+  
+Once you've made a repository on Github, copy its address, and use it to "add a remote" to your local repository. A remote is just a fancy word for a remote repository.  
+  
+```bash
+git remote add origin https://github.com/FED-104-6/intro-to-git.git
+```
+Note: the name `origin` is just a variable, and can be anything you'd like. "Origin" is just a common name for the main remote.   
+   
+You can see what remote repositories you have connected with the `git remote` command. Adding the `--verbose` option or `-v` flag will show you the remote repository's address as well.  
+  
+```bash
+git remote -v
+```
+
+
+
